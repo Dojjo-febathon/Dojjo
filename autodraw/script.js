@@ -269,20 +269,17 @@ window.addEventListener('load', function () {
             }
 
             img.src = URL.createObjectURL(this.files[0]); // set src to blob url
-            // var canvas = document.getElementById("canvas");
-            // var ctx = canvas.getContext("2d");
-            // ctx.drawImage(img.src,0,0,100,100);
-            // i = document.getElementById("sketch");
-            // ctx.drawImage(i, 10, 10);
+            ctx.CanvasImage()
         }
     });
 });
 
-document.getElementById("save").addEventListener(
-    "click", function () {
-        console.log("save button pressed!");
-        saveCanvas('magic-sketchpad', 'jpg');
-    });
+// document.getElementById("save").addEventListener(
+//     "click", function () {
+//         saveCanvas('magic-sketchpad', 'jpg');
+//         console.log("save button pressed!");
+
+//     });
 
 /// EVENT LISTENERS ///
 canvas.addEventListener("mousemove", putPoint);
